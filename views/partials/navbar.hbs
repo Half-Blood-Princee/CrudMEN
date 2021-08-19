@@ -1,0 +1,25 @@
+<!--NAVBAR-->
+<nav class="grey darken-4">
+    <div class="nav-wrapper">
+        <!--Logo and link-->
+        <a href="/" class="brand-logo">TODOMEN</a>
+        <!--Logo and links-->
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {{#if isIndex}}<!--If this link active highlight-->
+                <!--link to page todos-->
+                <li class="active"><a href="/">Todos</a></li>
+            {{else}}
+                <!--link to page todos-->
+                <li><a href="/">Todos</a></li>
+            {{/if}}
+            {{#if isCreate}}<!--If this link active highlight-->
+                <!--link to page Create-->
+                <li class="active"><a href="/create">Create</a></li>
+            {{else}}
+                <!--link to page Create-->
+                <li><a href="/create">Create</a></li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>
+<!--NAVBAR-->
